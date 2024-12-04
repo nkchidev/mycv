@@ -1,16 +1,7 @@
-@font-face {
-    font-family: "Platypi-Light";
-    src: url('../fonts/Platypi-Light.ttf');
-}
-
-@font-face {
-    font-family: "Platypi-Bold";
-    src: url('../fonts/Platypi-Bold.ttf');
-}
 :root{
     --transition-base: all 0.4s linear;
-    --font-family-light:"Platypi-Light";
-    --font-family-bold:"Platypi-Bold";
+    --font-family-light: "Platypi-Light";
+    --font-family-bold: "Platypi-Bold";
     --wash: #3E4042;
     --web-wash: #18191A;
     --c-text-sm: 12px;
