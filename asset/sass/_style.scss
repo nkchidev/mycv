@@ -73,13 +73,16 @@
 .get-latest-cv:hover {
     background-color: var(--wash);
 }
-.body-content {
-    padding: 2rem 20px;
-    border-radius: 20px 5px 20px 5px;
-    box-shadow:
-        4px 8px 0px rgb(255, 255, 255, 0.5),
-        8px 16px 0px rgb(255, 255, 255, 0.5);
+
+.container-body-content{
+    border-radius: 20px;
+
+    .body-content {
+        padding: 2rem 20px;
+        // box-shadow: 4px 8px 0px rgb(255, 255, 255, 0.5), 8px 16px 0px rgb(255, 255, 255, 0.5);
+    }
 }
+
 .header-section {
     text-transform: uppercase;
     font-size: var(--c-text-xl);
@@ -137,6 +140,10 @@
 
 .pb-32 {
     padding-bottom: 32px;
+
+    @include maxWidth(991) {
+        padding-bottom: 16px;
+    }
 }
 
 .color-black {
@@ -159,6 +166,7 @@ ul.list-layout {
     gap: 20px;
     padding: 0;
     margin-top: 2rem;
+    justify-content: space-between;
 }
 
 ul.list-layout li {

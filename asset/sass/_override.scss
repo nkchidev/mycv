@@ -92,6 +92,10 @@ article p {
 }
 section {
     margin-bottom: 3rem;
+
+    @include maxWidth(991) {
+        margin-bottom: 1.5rem;
+    }
 }
 .no-mg-top{
     margin-top: 0 !important;
